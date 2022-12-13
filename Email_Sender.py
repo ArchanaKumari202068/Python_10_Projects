@@ -12,7 +12,7 @@ import smtplib
 
 
 email_sender = 'archanakumari202068@gmail.com'
-email_password = 'archu@202068' #security reason
+email_password = password #security 
 email_receiver = 'yilare5389@areosur.com'
 subject = "Testing"
 body = """
