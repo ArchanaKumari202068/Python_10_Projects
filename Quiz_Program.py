@@ -40,3 +40,20 @@ quiz = {
 }
 
 score = 0
+
+for key,value in quiz.items():
+    print(value['question'])
+    answer =input("Answer?")
+     
+     # check ans is correct or not
+    # python is case sensitive 
+    # so we use .lower ans =Ans is wrong
+    if answer.lower() == value['answer'].lower():
+        print('Correct')
+        score = score + 1
+        print("Your score is :"+str(score))
+        print("")
+        print("")
+
+print("You got " + str(score) + "out of 7 questins correctly")
+print("Your Percentage" + str(int(score/7 * 100)) + "%")
