@@ -14,15 +14,15 @@ import smtplib
 email_sender = 'archanakumari202068@gmail.com'
 email_password = password #security 
 email_receiver = 'yilare5389@areosur.com'
-subject = "Testing"
+subject = "GoodMorning"
 body = """
-Waiting for your reply...
+Have a nice day...
 """
 
 em = EmailMessage() #instance 
 em['from'] = email_sender
 em['To'] = email_receiver
-em['subjects'] = subject
+em['subject'] = subject
 em.set_content(body)
 context = ssl.create_default_context ()
 with smtplib.SMTP_SSL('smtp.gmail.com',465,context=context) as smtp:

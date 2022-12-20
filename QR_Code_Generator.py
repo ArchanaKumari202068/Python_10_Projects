@@ -17,7 +17,9 @@ def generate_qrcode(text):
     qr.add_data(text)
     qr.make(fit=True)
     img = qr.make_image(fill_color = "black",back_color="white")
-    img.save("qrimg.png")
+    img.save("qrimg_01.png")
 
-generate_qrcode("https://pay.google.com/")    
+url = input("Enter Your url: ")
+generate_qrcode(url)
+# generate_qrcode("https://pay.google.com/")    
 
